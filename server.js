@@ -19,8 +19,11 @@ error=>{
   console.log("database error: " + error)
 }
 );
-
-
+// changess for heroku
+app.use(express.static('public'));
+  app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname,'public/index.html'));
+})
 
 // Setup Express.js
 const app = express()
