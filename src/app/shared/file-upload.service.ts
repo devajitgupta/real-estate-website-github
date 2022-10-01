@@ -12,8 +12,8 @@ import {
   providedIn: 'root',
 })
 export class FileUploadService {
-  baseURL = 'http://localhost:4000/api';
-  pageURL='http://localhost:4000/page';
+  baseURL = 'api';
+  pageURL='page';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) {}
