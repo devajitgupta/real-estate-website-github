@@ -4,8 +4,8 @@ let express = require('express'),
   bodyParser = require('body-parser');
 
 // Routes to Handle Request
-const userRoute = require('../backend/routes/user.route')
-const pageRoute = require('../backend/routes/page.route')
+const userRoute = require('./routes/user.route')
+const pageRoute = require('./routes/page.route')
 
 // MongoDB Setup
 mongoose.connect('mongodb+srv://devajitgupta:9455858543@cluster0.rpmmn5h.mongodb.net/bookstore?retryWrites=true&w=majority',{
